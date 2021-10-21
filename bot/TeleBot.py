@@ -4,7 +4,7 @@ import schedule
 import time
 
 #Тело бота
-bot = telebot.TeleBot("1981131567:AAGnV0xEAECmWxeFeNfyxQ9U64IYDU6es6U", parse_mode=None) # You can set parse_mode by default. HTML or MARKDOWN
+bot = telebot.TeleBot("TOKEN", parse_mode=None) # You can set parse_mode by default. HTML or MARKDOWN
 @bot.message_handler(commands=['start', 'help', 'match', 'Fmatch', 'Notice'])
 def send_welcome(message):
     if message.text == '/start':
